@@ -11,3 +11,7 @@
 .font-cursive {
     font-family: 'Indie Flower', cursive;
 }
+
+.full-height-section {
+    height: 100vh;
+}

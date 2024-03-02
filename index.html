@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- JS -->
+    <script src="script.js"></script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -16,19 +19,30 @@
 <body>
 
     <section id="Intro">
-        <div class="flex flex-col sm:flex-row"> 
+        <div class="flex flex-col sm:flex-row sm:h-screen"> 
             <div class="sm:w-1/2 flex justify-center order-2 sm:order-1"> 
                 <div class="container mx-auto p-8"> 
-                    <p class="text-6xl sm:mt-24 sm:ml-24 text-center sm:text-left font-cursive">My Story</p>
-                    <p class="mt-8 text-3xl sm:ml-24 sm:mr-24 sm:text-left text-center font-cursive">
-                        I'm local artist in the Guelph area creating stickers to help fund my work as biolgist and involvement in the University of Guelph Wildlife Club.
-                    </p>
+                    <div id="borderDiv"> 
+                        <p class="text-4xl sm:text-6xl sm:mt-16 sm:ml-24 text-center sm:text-left font-cursive">My Story</p>
+                        <p class="mt-8 text-2xl sm:text-3xl sm:ml-24 sm:mr-24 sm:text-left text-center font-cursive">
+                            I'm a local artist in the Guelph area, creating stickers to help fund my work as a biologist and my involvement in the University of Guelph Wildlife Club.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="sm:w-1/2 bg-cover bg-center sm:h-auto order-1 sm:order-2" id="mountains-div">
             </div>
         </div>
-    </section>    
+    </section>
+
+    
+    <section id="Gallery">
+        <div class="flex flex-col sm:h-screen">
+            <div class="flex justify-center h-1/2">
+                <p class="text-6xl text-center font-cursive mt-24">Gallery</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 
