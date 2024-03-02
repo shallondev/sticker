@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- JS -->
-    <script src="script.js"></script>
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -22,12 +19,19 @@
         <div class="flex flex-col sm:flex-row sm:h-screen"> 
             <div class="sm:w-1/2 flex justify-center order-2 sm:order-1"> 
                 <div class="container mx-auto p-8"> 
-                    <div id="borderDiv"> 
-                        <p class="text-4xl sm:text-6xl sm:mt-16 sm:ml-24 text-center sm:text-left font-cursive">My Story</p>
-                        <p class="mt-8 text-2xl sm:text-3xl sm:ml-24 sm:mr-24 sm:text-left text-center font-cursive">
+                    <div id="borderDiv1"> 
+                        <p class="text-4xl sm:text-6xl sm:mt-16 sm:ml-24 text-center sm:text-left font-cursive text-blue-900">My Story</p>
+                        <p class="mt-8 text-2xl sm:text-3xl sm:ml-24 sm:mr-24 sm:text-left text-center font-cursive text-gray-800">
                             I'm a local artist in the Guelph area, creating stickers to help fund my work as a biologist and my involvement in the University of Guelph Wildlife Club.
-                        </p>
+                        </p>                                      
                     </div>
+                    <div class="flex justify-center sm:justify-start h-1/2">
+                        <a href="#About">
+                            <button class="sm:text-3xl mt-8 text-center sm:mt-8 sm:ml-24 bg-transparent text-blue-900 hover:text-blue-600 hover:border-blue-600 font-semibold py-2 px-4 border border-gray-800 rounded-full">
+                                Learn More
+                            </button> 
+                        </a> 
+                    </div>                                      
                 </div>
             </div>
             <div class="sm:w-1/2 bg-cover bg-center sm:h-auto order-1 sm:order-2" id="mountains-div">
@@ -35,14 +39,89 @@
         </div>
     </section>
 
-    
-    <section id="Gallery">
-        <div class="flex flex-col sm:h-screen">
-            <div class="flex justify-center h-1/2">
-                <p class="text-6xl text-center font-cursive mt-24">Gallery</p>
+    <section id="About">
+        <div class="flex flex-col sm:flex-row sm:h-screen">
+            <div class="sm:w-1/2 bg-cover bg-center sm:h-auto" id="person-div">
+            </div> 
+            <div class="sm:w-1/2 flex justify-center"> 
+                <div class="container mx-auto p-8"> 
+                    <div id="borderDiv2"> 
+                        <p class="text-4xl sm:text-6xl sm:mt-16 sm:ml-24 text-center sm:text-left font-cursive text-blue-900">My Story</p>
+                        <p class="mt-8 text-2xl sm:text-3xl sm:ml-24 sm:mr-24 sm:text-left text-center font-cursive text-gray-800">
+                            I'm a local artist in the Guelph area, creating stickers to help fund my work as a biologist and my involvement in the University of Guelph Wildlife Club.
+                        </p>
+                    </div>
+                    <div class="flex justify-center sm:justify-start h-1/2">
+                        <a href="#Gallery">
+                            <button class="sm:text-3xl mt-8 text-center sm:mt-8 sm:ml-24 bg-transparent text-blue-900 hover:text-blue-600 hover:border-blue-600 font-semibold py-2 px-4 border border-gray-800 rounded-full">
+                                See Stickers!
+                            </button> 
+                        </a> 
+                    </div>  
+                </div>
             </div>
         </div>
     </section>
+
+    
+    <section id="Gallery">
+        <div class="flex flex-col">
+            <div class="flex justify-center h-1/2" id="orderDiv">
+                <p class="text-4xl sm:text-6xl text-center font-cursive mt-24 text-blue-900">Order Today!
+                    <span class="text-2xl sm:text-3xl text-center font-cursive mt-2 text-gray-800">
+                       <br> All these cuties are for sale!
+                    </span>
+                </p>
+            </div>
+            <div class="flex justify-center h-1/2">
+                <a href="#contact">
+                    <button class="sm:text-3xl mt-8 text-center bg-transparent text-blue-900 hover:text-blue-600 hover:border-blue-600 font-semibold py-2 px-4 border border-gray-800 rounded-full">
+                        Let's Get in Touch!
+                    </button> 
+                </a> 
+            </div>
+            <div class="mt-16">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 h-1/2 mr-2 ml-2">
+                    <div class="bg-gray-200 flex items-center justify-center">
+                        <img src="media/redfrog.jpg" alt="Mushroom Frog" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-gray-200 flex items-center justify-center">
+                        <img src="media/cosmicfrog.jpg" alt="Cosmic Frog" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-gray-200 flex items-center justify-center">
+                        <img src="media/greenfrog.jpg" alt="Green Frog" class="w-full h-full object-cover">
+                    </div>
+                    <div class="bg-gray-200 flex items-center justify-center">
+                        <img src="media/redfrog2.jpg" alt="Lava Frog" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="pt-16" id="contact">
+        <div class="mt-8 mb-8">
+            <div class="max-w-8xl mx-auto px-4">
+                <h2 class="text-3xl sm:text-4xl font-semibold mb-6 text-blue-900">Contact Us</h2>
+                <form action="#" class="space-y-6">
+                    <div>
+                        <label for="name" class="block font-medium text-gray-800">Name</label>
+                        <input type="text" id="name" name="name" class="w-full mt-1 px-4 py-3 border border-gray-600 rounded-md focus:outline-none focus:border-blue-800">
+                    </div>
+                    <div>
+                        <label for="email" class="block font-medium text-gray-800">Email</label>
+                        <input type="email" id="email" name="email" class="w-full mt-1 px-4 py-3 border border-gray-600 rounded-md focus:outline-none focus:border-blue-800">
+                    </div>
+                    <div>
+                        <label for="message" class="block font-medium text-gray-800">Message</label>
+                        <textarea id="message" name="message" rows="6" class="w-full mt-1 px-4 py-3 border border-gray-600 rounded-md focus:outline-none focus:border-blue-800"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-900 text-gray-100 px-8 py-4 rounded-md hover:bg-blue-950 transition-colors duration-300">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
 
 </body>
 
