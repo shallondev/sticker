@@ -1,0 +1,13 @@
+#mountains-div {
+    background-image: url('media/frogs.jpg'); 
+    height: 100vh;
+}
+@media (max-width: 640px) {
+    #mountains-div {
+        height: 50vh;
+    }
+}
+
+.font-cursive {
+    font-family: 'Indie Flower', cursive;
+}
